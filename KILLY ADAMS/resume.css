@@ -1,0 +1,143 @@
+.headresume{
+ background-color: white;   
+ opacity: 0;
+ transform: translateY(-100px);
+ transition: 2s;
+}
+
+.headresume h1,.headresume p{
+    width: 80%;
+    margin:40px auto;
+    text-align: center;
+    
+}
+
+.headresume h1{
+    font-size: 42px;
+    font-weight: bold;
+    position: relative;
+}
+.headresume h1::after {
+    content: "";
+    position: absolute;
+    position: absolute;
+    top: 66px;
+    left: 50%;
+    margin: 0 auto;
+    width: 20px;
+    height: 3px;
+    background-color: #41dfdf;
+}
+.headresume h1::before {
+    content: "";
+    position: absolute;
+    top: 66px;
+    right: 50%;
+    margin: 0 auto;
+    width: 20px;
+    height: 3px;
+    background-color: #41dfdf;
+}
+.headresume p{
+    font-size: 20px;
+}
+.resumecontent{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition-duration: 2s;
+}
+.resumecontent .sumedu, .resumecontent .experience{
+    width: 40%;
+}
+.resumecontent .sumedu p{
+    width: 70%;
+    color: #4c4c4c;
+    font-size: 20px;
+}
+.resumecontent ul {
+list-style-position: outside;
+color: #4c4c4c;
+padding-left: 18px;
+font-size: 18px;
+margin: 24px 0;
+}
+.resumecontent ul li{
+    margin: 15px 0;
+
+}
+.resumecontent h2{
+    color: #34b7a7;
+   font-size: 20px;
+}
+.sumary{
+    position: relative;
+    margin-bottom: 20px;
+}
+.sumary::after ,.master::after,.bachelor::after,.senior::after,.graphic::after {
+    content: "";
+    position: absolute;
+    background-color: #34b7a7;
+    left: -30px;
+    top: 0px;
+    height: 101%;
+    width: 2px;
+}
+.sumary::before, .master::before, .bachelor::before,.senior::before,.graphic::before {
+    content: "";
+    position: absolute;
+    background-color: #34b7a7;
+    left: -38px;
+    z-index: 2;
+    background-color: white;
+    top: 0px;
+    height: 13px;
+    width: 13px;
+    border: #34b7a7 2px solid;
+    border-radius: 50%;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+}
+.education .master ,.education .bachelor{
+    width: 100%;
+    position: relative;
+}
+
+.master::after,.master::before,.bachelor::before,.bachelor::after{
+    top: 15px;
+}
+
+.bachelor{
+    margin-bottom: 58px;
+}
+.bachelor h3,.master h3,.graphic h3 ,.senior h3 {
+    background-color: #34b7a752;
+    color: #34b7a7;
+    width: fit-content;
+    padding: 4px 18px;
+    font-size: 14px;
+    border-radius: 3px;
+    font-size: 18px;
+
+}
+
+.senior li ,.graphic li{
+    width: 70%;
+}
+.senior,.graphic{
+    position: relative;
+
+}
+.senior::after{
+    height: 107%;
+}
+.resumecontent h1{
+    font-weight: lighter;
+}
+.activeres{
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
